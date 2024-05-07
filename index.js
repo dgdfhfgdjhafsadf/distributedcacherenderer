@@ -1,9 +1,6 @@
-function squareDigits(num) {
-  return parseInt(
-    num
-      .toString()
-      .split("")
-      .map((digit) => digit ** 2)
-      .join(""),
-  );
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
 }
